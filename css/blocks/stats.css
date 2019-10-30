@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'title-h2'.
-        on line 8 of D:\Verstka\Cube\sass\blocks\stats.scss, in `title-h2'
-        from line 8 of D:\Verstka\Cube\sass\blocks\stats.scss
+        on line 8 of D:\Verstka\Repozitories\cube.github.com\sass\blocks\stats.scss, in `title-h2'
+        from line 8 of D:\Verstka\Repozitories\cube.github.com\sass\blocks\stats.scss
 
 3: .stats{
 4:     background-color: $statsBg;
@@ -16,8 +16,8 @@ Error: Undefined mixin 'title-h2'.
 13: .stats-blocks{
 
 Backtrace:
-D:\Verstka\Cube\sass\blocks\stats.scss:8:in `title-h2'
-D:\Verstka\Cube\sass\blocks\stats.scss:8
+D:\Verstka\Repozitories\cube.github.com\sass\blocks\stats.scss:8:in `title-h2'
+D:\Verstka\Repozitories\cube.github.com\sass\blocks\stats.scss:8
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'title-h2'.\A         on line 8 of D:\Verstka\Cube\sass\blocks\stats.scss, in `title-h2'\A         from line 8 of D:\Verstka\Cube\sass\blocks\stats.scss\A \A 3: .stats{\A 4:     background-color: $statsBg;\A 5:     padding: 4.2% 0 9.2% 0;\A 6: }\A 7: .stats-title{\A 8:     @include title-h2();\A 9:     font-family: 'Oswald-Light';\A 10:     color: $colorHoverMenu;\A 11:     margin-bottom: 5.8%;\A 12: }\A 13: .stats-blocks{"; }
+  content: "Error: Undefined mixin 'title-h2'.\A         on line 8 of D:\Verstka\Repozitories\cube.github.com\sass\blocks\stats.scss, in `title-h2'\A         from line 8 of D:\Verstka\Repozitories\cube.github.com\sass\blocks\stats.scss\A \A 3: .stats{\A 4:     background-color: $statsBg;\A 5:     padding: 4.2% 0 9.2% 0;\A 6: }\A 7: .stats-title{\A 8:     @include title-h2();\A 9:     font-family: 'Oswald-Light';\A 10:     color: $colorHoverMenu;\A 11:     margin-bottom: 5.8%;\A 12: }\A 13: .stats-blocks{"; }

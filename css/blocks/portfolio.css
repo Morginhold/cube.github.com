@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'title-h2'.
-        on line 8 of D:\Verstka\Cube\sass\blocks\portfolio.scss, in `title-h2'
-        from line 8 of D:\Verstka\Cube\sass\blocks\portfolio.scss
+        on line 8 of D:\Verstka\Repozitories\cube.github.com\sass\blocks\portfolio.scss, in `title-h2'
+        from line 8 of D:\Verstka\Repozitories\cube.github.com\sass\blocks\portfolio.scss
 
 3: .portfolio{
 4:     padding: 13.5% 0 12.9%;
@@ -16,8 +16,8 @@ Error: Undefined mixin 'title-h2'.
 13:     justify-content: center;
 
 Backtrace:
-D:\Verstka\Cube\sass\blocks\portfolio.scss:8:in `title-h2'
-D:\Verstka\Cube\sass\blocks\portfolio.scss:8
+D:\Verstka\Repozitories\cube.github.com\sass\blocks\portfolio.scss:8:in `title-h2'
+D:\Verstka\Repozitories\cube.github.com\sass\blocks\portfolio.scss:8
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'title-h2'.\A         on line 8 of D:\Verstka\Cube\sass\blocks\portfolio.scss, in `title-h2'\A         from line 8 of D:\Verstka\Cube\sass\blocks\portfolio.scss\A \A 3: .portfolio{\A 4:     padding: 13.5% 0 12.9%;\A 5: }\A 6: \A 7: .portfolio-title{\A 8:     @include title-h2();\A 9:     margin-bottom: 2.1%;\A 10: }\A 11: .portf-menu-list{\A 12:     display: flex;\A 13:     justify-content: center;"; }
+  content: "Error: Undefined mixin 'title-h2'.\A         on line 8 of D:\Verstka\Repozitories\cube.github.com\sass\blocks\portfolio.scss, in `title-h2'\A         from line 8 of D:\Verstka\Repozitories\cube.github.com\sass\blocks\portfolio.scss\A \A 3: .portfolio{\A 4:     padding: 13.5% 0 12.9%;\A 5: }\A 6: \A 7: .portfolio-title{\A 8:     @include title-h2();\A 9:     margin-bottom: 2.1%;\A 10: }\A 11: .portf-menu-list{\A 12:     display: flex;\A 13:     justify-content: center;"; }

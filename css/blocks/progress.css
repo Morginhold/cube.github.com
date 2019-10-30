@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'title-h2'.
-        on line 10 of D:\Verstka\Cube\sass\blocks\progress.scss, in `title-h2'
-        from line 10 of D:\Verstka\Cube\sass\blocks\progress.scss
+        on line 10 of D:\Verstka\Repozitories\cube.github.com\sass\blocks\progress.scss, in `title-h2'
+        from line 10 of D:\Verstka\Repozitories\cube.github.com\sass\blocks\progress.scss
 
 5:     background-color: $progressBg;
 6:     padding-top: 13.6%;
@@ -16,8 +16,8 @@ Error: Undefined mixin 'title-h2'.
 15: .text-progress{
 
 Backtrace:
-D:\Verstka\Cube\sass\blocks\progress.scss:10:in `title-h2'
-D:\Verstka\Cube\sass\blocks\progress.scss:10
+D:\Verstka\Repozitories\cube.github.com\sass\blocks\progress.scss:10:in `title-h2'
+D:\Verstka\Repozitories\cube.github.com\sass\blocks\progress.scss:10
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'title-h2'.\A         on line 10 of D:\Verstka\Cube\sass\blocks\progress.scss, in `title-h2'\A         from line 10 of D:\Verstka\Cube\sass\blocks\progress.scss\A \A 5:     background-color: $progressBg;\A 6:     padding-top: 13.6%;\A 7:     padding-bottom: 12.9%;\A 8: }\A 9: .title-progress{\A 10:     @include title-h2();\A 11:     @media (min-width: 1500px) {\A 12:         @include dynamicText(187.5%, 60, 30, 1500px, 3000, 1500);\A 13:     }\A 14: }\A 15: .text-progress{"; }
+  content: "Error: Undefined mixin 'title-h2'.\A         on line 10 of D:\Verstka\Repozitories\cube.github.com\sass\blocks\progress.scss, in `title-h2'\A         from line 10 of D:\Verstka\Repozitories\cube.github.com\sass\blocks\progress.scss\A \A 5:     background-color: $progressBg;\A 6:     padding-top: 13.6%;\A 7:     padding-bottom: 12.9%;\A 8: }\A 9: .title-progress{\A 10:     @include title-h2();\A 11:     @media (min-width: 1500px) {\A 12:         @include dynamicText(187.5%, 60, 30, 1500px, 3000, 1500);\A 13:     }\A 14: }\A 15: .text-progress{"; }

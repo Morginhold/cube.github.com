@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'title-h2'.
-        on line 6 of D:\Verstka\Cube\sass\blocks\about-us.scss, in `title-h2'
-        from line 6 of D:\Verstka\Cube\sass\blocks\about-us.scss
+        on line 6 of D:\Verstka\Repozitories\cube.github.com\sass\blocks\about-us.scss, in `title-h2'
+        from line 6 of D:\Verstka\Repozitories\cube.github.com\sass\blocks\about-us.scss
 
 1: .about-us{
 2:     padding-top: 13.4%;
@@ -16,8 +16,8 @@ Error: Undefined mixin 'title-h2'.
 11: .about-text{
 
 Backtrace:
-D:\Verstka\Cube\sass\blocks\about-us.scss:6:in `title-h2'
-D:\Verstka\Cube\sass\blocks\about-us.scss:6
+D:\Verstka\Repozitories\cube.github.com\sass\blocks\about-us.scss:6:in `title-h2'
+D:\Verstka\Repozitories\cube.github.com\sass\blocks\about-us.scss:6
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'title-h2'.\A         on line 6 of D:\Verstka\Cube\sass\blocks\about-us.scss, in `title-h2'\A         from line 6 of D:\Verstka\Cube\sass\blocks\about-us.scss\A \A 1: .about-us{\A 2:     padding-top: 13.4%;\A 3:     padding-bottom: 15.3%;\A 4: }\A 5: .about-title{\A 6:     @include title-h2();\A 7:     @media (min-width: 1500px) {\A 8:         @include dynamicText(187.5%, 60, 30, 1500px, 3000, 1500);\A 9:     }\A 10: }\A 11: .about-text{"; }
+  content: "Error: Undefined mixin 'title-h2'.\A         on line 6 of D:\Verstka\Repozitories\cube.github.com\sass\blocks\about-us.scss, in `title-h2'\A         from line 6 of D:\Verstka\Repozitories\cube.github.com\sass\blocks\about-us.scss\A \A 1: .about-us{\A 2:     padding-top: 13.4%;\A 3:     padding-bottom: 15.3%;\A 4: }\A 5: .about-title{\A 6:     @include title-h2();\A 7:     @media (min-width: 1500px) {\A 8:         @include dynamicText(187.5%, 60, 30, 1500px, 3000, 1500);\A 9:     }\A 10: }\A 11: .about-text{"; }

@@ -3758,6 +3758,9 @@ body {
     .stats-block-text {
       font-size: calc(100% + (32 - 16) * (100vw - 1500px) / (3000 - 1500)); } }
 
+@media (max-width: 1500px) {
+  .stats-block-img {
+    width: auto; } }
 @media (max-width: 780px) {
   .stats-blocks {
     padding: 0 5.4%; }

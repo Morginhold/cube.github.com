@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$yellowBg".
-        on line 17 of D:\Verstka\Cube\sass\blocks\header.scss
+        on line 17 of D:\Verstka\Repozitories\cube.github.com\sass\blocks\header.scss
 
 12:     display: grid;
 13:     grid-template-columns: repeat(16, 1fr);
@@ -15,7 +15,7 @@ Error: Undefined variable: "$yellowBg".
 22:     background: url(../img/ipad-bg.jpg) no-repeat bottom center;
 
 Backtrace:
-D:\Verstka\Cube\sass\blocks\header.scss:17
+D:\Verstka\Repozitories\cube.github.com\sass\blocks\header.scss:17
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -62,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$yellowBg\".\A         on line 17 of D:\Verstka\Cube\sass\blocks\header.scss\A \A 12:     display: grid;\A 13:     grid-template-columns: repeat(16, 1fr);\A 14: }\A 15: .menu{\A 16:     grid-column: span 8;\A 17:     background-color: $yellowBg;\A 18:     position: relative;\A 19: }\A 20: .latest{\A 21:     grid-column: span 8;\A 22:     background: url(../img/ipad-bg.jpg) no-repeat bottom center;"; }
+  content: "Error: Undefined variable: \"$yellowBg\".\A         on line 17 of D:\Verstka\Repozitories\cube.github.com\sass\blocks\header.scss\A \A 12:     display: grid;\A 13:     grid-template-columns: repeat(16, 1fr);\A 14: }\A 15: .menu{\A 16:     grid-column: span 8;\A 17:     background-color: $yellowBg;\A 18:     position: relative;\A 19: }\A 20: .latest{\A 21:     grid-column: span 8;\A 22:     background: url(../img/ipad-bg.jpg) no-repeat bottom center;"; }
