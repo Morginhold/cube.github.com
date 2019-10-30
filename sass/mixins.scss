@@ -1,0 +1,90 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin min-max($min-width, $max-width, $padding) {
+  min-width: $min-width;
+  max-width: $max-width;
+  padding: 0 $padding;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@mixin adaptive-video() {
+  position: relative;
+  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+@mixin visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0,0,0,0);
+  overflow: hidden;
+}
+
+@mixin button(){
+    background: transparent;
+    font-size: 14px;
+    color: $white;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    cursor: pointer;
+    box-shadow: none;
+    border: none;
+    appearance: none;
+    transition-property: background-color;
+    transition-duration: 500ms;
+    border: 1px solid $btnBorder;
+    @content;
+    
+    &:hover, &:active{
+      background-color: $btnBorder;
+    }
+    @media (min-width: 1500px) {
+      @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500);
+    }
+}
+
+@mixin dynamicText($minSizePercent, $maxSize, $minSize, $minWidthPx, $maxWidth, $minWidth) {
+  font-size: calc(#{$minSizePercent} + (#{$maxSize} - #{$minSize}) * (100vw - #{$minWidthPx}) / (#{$maxWidth} - #{$minWidth}));
+}
+
+@mixin title-h2(){
+  font-size: 30px;
+  color: $colorText;
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-family: "Oswald-Light";
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 2.8%;
+  @media (min-width: 1500px){
+    @include dynamicText(187.5%, 60, 30, 1500px, 3000, 1500);
+  }
+}
+

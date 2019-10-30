@@ -1,0 +1,43 @@
+$dotActive: #60d4d4;
+$dotNoActive: #97c2be;
+
+.slider{
+    background-color: $statsBg;
+    padding: 10.2% 6.3% 5.7%;
+}
+.slider-carousel{
+    .owl-stage{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .owl-item{
+        margin: 0 1%;
+    }
+    .owl-dots{
+        margin-top: 5.8%!important;
+    }
+    .owl-dot{
+        span{
+            width: 15px!important;
+        height: 15px!important;
+        border-radius: 50%;
+        margin: 0 5px!important;
+        background: $dotNoActive!important;
+        }
+    }
+    .owl-dot.active{
+        span{
+            background: $dotActive!important;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .slider-carousel{
+        .owl-dots {
+            margin-top: 10.8% !important;
+        }
+    } 
+}
+

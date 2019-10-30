@@ -1,0 +1,88 @@
+.about-us{
+    padding-top: 13.4%;
+    padding-bottom: 15.3%;
+}
+.about-title{
+    @include title-h2();
+    @media (min-width: 1500px) {
+        @include dynamicText(187.5%, 60, 30, 1500px, 3000, 1500);
+    }
+}
+.about-text{
+    margin: 0 19.2%;
+    font-size: 16px;
+    color: $colorText;
+    line-height: 1.125;
+    text-align: center;
+    @media (min-width: 1500px) {
+        @include dynamicText(100%, 32, 16, 1500px, 3000, 1500);
+    }
+}
+.about-blocks{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10.6% 6.4% 0;
+}
+.about-block{
+    flex-basis: 22.2%;
+    margin-right: 3.5%;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.about-block-title{
+    margin-top: 0;
+    margin-bottom: 1.7%;
+    font-size: 14px;
+    color: $colorText;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    position: relative;
+    padding-left: 13px;
+    &::before{
+        content: '';
+        width: 5px;
+        background-color: $colorHoverMenu;
+        display: inline-block;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+    }
+    @media (min-width: 1500px) {
+        @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500);
+    }
+}
+.about-block-text{
+    font-size: 14px;
+    color: $colorText;
+    line-height: 1.286;
+    text-align: left;
+    margin-bottom: 0px;
+    @media (min-width: 1500px) {
+        @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500);
+    }
+}
+
+@media (max-width: 980px){
+    .about-text{
+        margin: 0 5.4%;
+    }
+    .about-blocks{
+        margin: 6.6% 5.4% 0;
+    }
+    .about-block{
+        flex-basis: 40%;
+        margin-right: 0;
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 480px){
+    .about-block{
+        flex-basis: auto;
+    }
+}

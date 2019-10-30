@@ -1,0 +1,164 @@
+$footerLeftBg: #bdb6a5;
+$leftTextTitle: rgb(100, 98, 80);
+$labelText: #8b8868;
+$borderInput: #74725c;
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+}
+.footer-left{
+    grid-column: span 8;
+    background-color: $footerLeftBg;
+}
+.footer-right{
+    grid-column: span 8;
+    background-color: $yellowBg;
+}
+.footer-left-text{
+    margin: 10.7% 15.3% 0 13.2%;
+}
+.left-text-title{
+    margin-top: 0px;
+    font-size: 24px;
+    color: $leftTextTitle;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 2.4%;
+    @media (min-width: 1500px) {
+        @include dynamicText(150%, 48, 24, 1500px, 3000, 1500);
+    }
+}
+.left-text-text{
+    font-size: 12px;
+    color: $leftTextTitle;
+    text-transform: uppercase;
+    line-height: 1.167;
+    text-align: left;
+    margin-bottom: 0;
+    @media (min-width: 1500px) {
+        @include dynamicText(75%, 24, 12, 1500px, 3000, 1500);
+    }
+}
+.form{
+    margin: 5.7% 21% 8.6%;
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+    label{
+        font-size: 14px;
+        color: $labelText;
+        text-transform: uppercase;
+        line-height: 2;
+        text-align: left;
+        @media (min-width: 1500px) {
+            @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500);
+        }
+    }
+    input, textarea{
+        background: none;
+        border: none;
+        border-top: 1px solid $borderInput;
+        padding: 10px 0;
+        font-size: 14px;
+        line-height: 1;
+        @media (min-width: 1500px) {
+            @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500);
+        }
+    }
+    textarea{
+        border-bottom: 1px solid $borderInput;
+        resize: none;
+    }
+}
+.form-button{
+    @include button();
+    width: 28%;
+    margin: 8.6% auto 0;
+    padding: 2.3% 0;
+}
+.logo-footer{
+    margin: 0 20px 20px 0;
+    flex-basis: 55%;
+    .logo-menu{
+        width: 28.8%;
+    }
+}
+.logo-street{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 17.6% 23.5% 0 18.1%;
+}
+.street{
+    margin-top: 0;
+    font-size: 13px;
+    color: $colorText;
+    text-transform: uppercase;
+    line-height: 1.077;
+    margin-bottom: 19%;
+    a{
+        color: $colorHoverMenu;
+        border-bottom: 1px solid transparent;
+        transition: 500ms border-color;
+        &:hover{
+            border-color: $colorHoverMenu;
+        }
+    }
+    @media (min-width: 1500px) {
+        @include dynamicText(81.25%, 26, 13, 1500px, 3000, 1500);
+    }
+}
+.icon-copy{
+    margin: 11.8% 29.3% 4.3% 36.4%;
+    text-align: center;
+}
+.footer-icon-social{
+    text-align: center;
+    margin-bottom: 40.8%;
+}
+.copyrait{
+    margin-top: 0;
+    font-size: 13px;
+    color: $black;
+    line-height: 1.146;
+    @media (min-width: 1500px) {
+        @include dynamicText(81.25%, 26, 13, 1500px, 3000, 1500);
+    }
+}
+
+@media (max-width: 1500px){
+    .icon-copy {
+        width: 225px;
+        margin: 11.8% auto 4.3%;
+    }
+    .form-button{
+        width: 120px;
+        padding: 12px 0;
+    }
+    .logo-footer{
+        flex-basis: auto;
+        .logo-menu{
+            width: 88px;
+        }
+    }
+}
+
+@media (max-width: 980px){
+    .footer-left-text {
+        margin: 10.7% 5.4% 0;
+    }
+    .form {
+        margin: 5.7% 5.4% 8.6%;
+    }
+    .logo-street{
+        margin: 17.6% 5.4% 0;
+    }
+}
+
+@media (max-width: 780px){
+    .footer {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}

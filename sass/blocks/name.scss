@@ -1,0 +1,83 @@
+.name{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+}
+.name-block{
+    grid-column: span 4;
+    padding-top: 87.6%;
+    &:nth-child(1){
+        background: url(../img/name-1.jpg) no-repeat;
+        background-size: cover;
+    }
+    &:nth-child(2){
+        background: url(../img/name-2.jpg) no-repeat;
+        background-size: cover;
+        .name-block-item{
+            text-align: right;
+        }
+    }
+    &:nth-child(3){
+        background: url(../img/name-3.jpg) no-repeat;
+        background-size: cover;
+    }
+    &:nth-child(4){
+        background: url(../img/name-4.jpg) no-repeat;
+        background-size: cover;
+        .name-block-item{
+            text-align: right;
+        }
+    }
+}
+.name-block-item{
+    padding: 0 10.7% 20% 10.7%;
+}
+.name-social{
+    display: inline-block;
+}
+.name-title{
+    font-size: 30px;
+    color: $colorLogo;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 4.6%;
+    @media (min-width: 1500px) {
+        @include dynamicText(187.5%, 60, 30, 1500px, 3000, 1500);
+    }
+}
+.professia{
+    font-size: 14px;
+    color: $black;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.114;
+    margin: 3% 0;
+    @media (min-width: 1500px) {
+        @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500);
+    }
+}
+.name-text{
+    font-size: 14px;
+    color: $black;
+    line-height: 1;
+    margin: 3% 0 4.6%;
+    @media (min-width: 1500px) {
+        @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500);
+    }
+}
+
+@media (max-width: 1020px){
+    .name{
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+@media (max-width: 530px){
+    .name{
+        grid-template-columns: 1fr;
+    }
+    .name-block-item {
+        padding: 0 5.4% 20% 5.4%;
+    }
+}

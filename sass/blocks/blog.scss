@@ -1,0 +1,118 @@
+$blockReadLink: rgb(254, 0, 0);
+
+.blog{
+    padding: 14.2% 0 16.5%;
+}
+.title-blog{
+    @include title-h2();
+    margin-bottom: 7.7%;
+}
+.blog-blocks{
+    padding: 0 6.1%;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-column-gap: 2.3%;
+}
+.blog-block{
+    &:nth-child(1){
+        grid-column: span 8;
+    }
+    &:nth-child(2){
+        grid-column: span 4;
+    }
+    &:nth-child(3){
+        grid-column: span 4;
+    }
+}
+.blog-block-img{
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+}
+.block-blog-title{
+    font-size: 16px;
+    color: $colorText;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.125;
+    text-align: left;
+    margin-bottom: 1.1%;
+    margin-top: 0;
+    @media (min-width: 1500px){
+        @include dynamicText(100%, 32, 16, 1500px, 3000, 1500);
+    }
+}
+.block-blog-text{
+    font-size: 14px;
+    color: $colorText;
+    line-height: 1.286;
+    text-align: left;
+    letter-spacing: 1.1px;
+    @media (min-width: 1500px){
+        @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500);
+    }
+}
+.block-read{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5%;
+}
+.block-read-author{
+    margin: 0 30px 0 0;
+    font-size: 14px;
+    color: $colorHoverMenu;
+    line-height: 1.286;
+    text-align: left;
+    span{
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    @media (min-width: 1500px){
+        @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500);
+    }
+}
+.block-read-link{
+    font-size: 14px;
+    color: $blockReadLink;
+    line-height: 1.286;
+    border-bottom: 1px solid transparent;
+    transition-duration: 500ms;
+    transition-property: border-color;
+    &:hover{
+        border-color: $blockReadLink;
+    }
+    @media (min-width: 1500px){
+        @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500);
+    }
+}
+
+@media (max-width: 980px){
+    .blog-blocks{
+        padding: 0 5.4%;
+        grid-template-columns: repeat(8, 1fr);
+    }
+    .blog-block{
+        margin-top: 8.3%;
+        &:nth-child(1){
+            margin-top: 0;
+        }
+    }
+    .blog-block-img{
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 480px){
+    .blog-block{
+        &:nth-child(2){
+            grid-column: span 8;
+        }
+        &:nth-child(3){
+            grid-column: span 8;
+        }
+    }
+    .blog {
+        padding: 14.2% 0 30px;
+    }
+}

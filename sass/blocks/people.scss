@@ -1,0 +1,89 @@
+$peopleBlockText: #686868;
+$textLinkPeople: #6cc5d9;
+$agoText: rgb(244, 130, 88);
+$borderDot: #8c8c8c;
+
+.people{
+    padding: 14.5% 0 18%;
+}
+.people-block{
+    margin: 0 25.6%;
+}
+.block-twit-icon{
+    text-align: center;
+    .fa{
+        font-size: 30px;
+        color: $colorHoverMenu;
+    }
+}
+.people-block-text{
+    font-size: 24px;
+    font-family: 'Lekton-Italic';
+    color: $peopleBlockText;
+    line-height: 1;  
+    margin-top: 3.5%;
+    margin-bottom: 1%;
+    a{
+        color: $textLinkPeople;
+        border-bottom: 1px solid transparent;
+        transition-duration: 500ms;
+        transition-property: border-color;
+        &:hover{
+            border-color: $textLinkPeople;
+        }
+    }
+    @media (min-width: 1500px) {
+        @include dynamicText(150%, 48, 24, 1500px, 3000, 1500);
+    }
+}
+.ago{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.183; 
+    color: $agoText;
+    position: relative;
+    padding: 0 0 0 40px;
+    &::before{
+        content: '';
+        width: 30px;
+        height: 1px;
+        display: block;
+        border-bottom: 1px dotted $borderDot;
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &::after{
+        content: '';
+        width: 23%;
+        height: 1px;
+        display: block;
+        border-bottom: 1px dotted $borderDot;
+        position: absolute;
+        top: 50%;
+        left: 100px;
+        transform: translateY(-50%);
+    }
+    @media (min-width: 1500px) {
+        @include dynamicText(75%, 24, 12, 1500px, 3000, 1500);
+    }
+}
+
+@media (max-width: 1500px){
+    .ago{
+        &:after{
+            left: 90px;  
+        }
+    }
+}
+
+@media (max-width: 980px){
+    .people-block{
+        margin: 0 5.4%;
+    }
+    .people-block-text{
+        margin-bottom: 10px;
+    }
+}
